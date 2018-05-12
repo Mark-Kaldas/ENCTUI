@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="enct.enctui.MainActivity">
+
+    <Button
+        android:id="@+id/SendSOS"
+        android:drawable="@drawable/ic_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="SOS"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/SendText"
+        android:layout_width="167dp"
+        android:layout_height="131dp"
+        android:layout_alignLeft="@+id/MsgBoard"
+        android:layout_alignStart="@+id/MsgBoard"
+
+        android:layout_marginLeft="25dp"
+
+        android:layout_below="@+id/SendSOS"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_light"
+        android:drawableTop="@drawable/ic_textsms_black_24dp"
+        android:padding="20dp"
+        android:text="Text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Call"
+        android:layout_width="167dp"
+        android:layout_height="131dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+
+        android:layout_above="@+id/MsgBoard"
+        android:layout_alignEnd="@+id/MsgBoard"
+        android:layout_alignRight="@+id/MsgBoard"
+
+        android:background="@android:color/holo_green_dark"
+        android:drawableTop="@drawable/ic_call_black_24dp"
+        android:padding="20dp"
+        android:text="Call"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/MsgBoard"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_below="@+id/SendText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Msg Board"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+package enct.enctui;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class SendTextActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_send_text);
+    }
+}
